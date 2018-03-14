@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Step 2</title>
+</head>
+<body>
+    <!-- HEADER SECTION -->
+
+        <header>
+                <div>
+                <div class="logo">Logo</div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Navigation</button>
+                    <div class="dropdown-content">
+                        <a href="#">Home</a>
+                        <a href="#">About us</a>
+                        <a href="#">Contact us</a>
+                    </div>
+                </div>
+            </header>
+    <main>
+        <section>
+            <h1>Sign up to yourcustomtailor.com</h1>
+            </section>
+
+            <!-- FORM SECTION -->
+    
+            <section class="form">
+                <div>
+                    <h2>Step 2/4 - how can we reach you?</h2>
+                </div>
+                <p><strong>Progress</strong></p>
+            <div class="progress-border">
+                 <div class="progress2"></div>
+            </div>
+            <p>
+                We will probably need to stay in touch somehow. Let us know how we can reach you?
+            </p>
+            <form class="form2" action="step3.html">
+                <label for="email" class="emailTo">Email*</label>
+                    <input required type="email" id="email" class="email" name="email">
+
+                <label for="phone">Phone</label>
+                    <input type="tel" id="phone" class="phone" name="phone" pattern="^[0-9]+$" maxlength="15" title="please enter a valid phone number">
+                         <br>
+
+                <label for="pass1" class="password1">Password*</label>
+                    <input required type="password" id="pass1" class="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 10 characters"> <br>
+                <div class="pass2">
+                 <label for="pass2">Re-enter Password*</label>
+                    <input required type="password" id="pass2" class="password2" name="repassword" minlength="10" onkeyup="checkPass(); return false;">
+                    <span id="confirmMessage"></span>
+                </div>
+
+                <!-- NEWSLETTER SECTION -->
+
+                    <p>I want to sign up for the newsletter</p>
+                    
+                    <div class="newsletter">
+                            <label for="weeklyNews">Weekly news</label>
+                                <input type="checkbox" id="weeklyNews" name="check[]">
+            
+                            <label for="monyhlyNews" class="mNews">Monthly news</label>
+                                <input type="checkbox" id="monyhlyNews" name="check[]">
+            
+                            <label for="NoNews" class="dontSend">Don't send me news</label>
+                                <input type="checkbox" id="NoNews" name="check[]">
+                                <br>
+                        </div> 
+
+                 <input type="submit" class="nextStep" id="nextStep" value="Next step" onclick="return val();">
+                
+            </form>
+        </section>    
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
