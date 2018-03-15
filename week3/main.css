@@ -1,0 +1,394 @@
+
+
+body {
+    margin: 2% 15% 0 15%;
+    font-family: 'Arial';
+}
+
+/* STEP ONE SECTION */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+
+    background-color: #d4d6d5;
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    padding: 20px;
+    clear: both;
+    
+}
+
+/* NAVIGATION */
+
+.dropbtn {
+    background-color: #d4d6d5;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 200px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 200px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* PROGRESS BAR SECTION */
+
+.progress {
+    width: 15%;
+    height: 40px;
+    background-color: #d4d6d5;
+}
+
+@keyframes slideInRight {
+    from {
+      transform: translate3d(100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+.progress, .progress2, .progress3 {
+    animation: 1.5s ease-out 0s 1 slideInRight;
+}
+
+@keyframes slideInLeft {
+    from {
+      transform: translate3d(25%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .progress4 {
+    animation: 1.5s ease-out 0s 1 slideInLeft;
+}
+
+
+.progress-border {
+    border: 0.8px solid black;
+}
+
+.progress2 {
+    width: 30%;
+    height: 40px;
+    background-color: #d4d6d5;
+}
+
+/* FORM SECTION */
+
+.form1 {
+    font-weight: bold;
+}
+
+.formAddress {
+    font-weight: bold;
+}
+
+form {
+    padding: 10px;
+}
+
+input {
+    padding: 10px;
+    margin: 2px 0 15px 10px;
+    width: 200px;
+}
+
+.labelFirstName {
+    margin-left: 35px;
+}
+
+.firstName {
+    margin-left: 41px;
+}
+
+select {
+    padding: 10px;
+    margin: 2px 0 15px 45px;
+    width: 220px;
+}
+
+.labelCountry {
+    margin-left: 50px;
+}
+
+.streetAdd {
+    margin:  2px 0 15px 45px;
+}
+
+textarea {
+    margin:2px 0 15px 15px;
+
+}
+
+.description-area {
+    font-size: 11px;
+    font-style: italic;
+}
+
+
+.profile-description, .profile-description2 {
+    display: flex;
+    margin-top: 40px;
+}
+
+/* SHIPPING ADDRESS SECTION */
+
+#shipping-address {
+    display: none;
+}
+
+.shipFirstName {
+    margin-left: 30px;
+}
+
+.shipCounrty {
+    margin-left: 50px;
+}
+
+input[type=submit] {
+    border: 1px outset #444; 
+    float: right; 
+    background-color:#d4d6d5;
+    height: 80px;
+    width: 200px;
+    font-weight: bold;
+}
+
+input[type=checkbox] {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+
+    /* STEP 2 SECTION */
+
+.form2 :not(p):not(#confirmMessage), .form4 :not(#confirmSms):not(#msgs) {
+    font-weight: bold;
+}
+
+#confirmMessage {
+    font-size: 12px;
+    color: red;
+    font-weight: lighter;
+}
+
+.emailTo {
+    margin-left: 98px;
+}
+
+
+#email {
+    margin-left: 25px;
+}
+
+.password1 {
+    margin-left: 65px;
+}
+
+
+
+#pass1 {
+    margin-left: 25px;
+}
+
+#pass2 {
+    margin-left: 20px;
+}
+
+
+
+/* STEP 3 SECTION */
+
+
+                /* PROGRESS BAR */
+
+.progress3 {
+    width: 50%;
+    height: 40px;
+    background-color: #d4d6d5;
+}
+
+/* FORM SECTION */
+
+.form3 {
+    margin-top: 40px;
+    padding: 30px;
+    font-weight: bold;
+}
+
+.apparal {
+    margin-left: 30px;
+}
+
+#apparal {
+    margin-left: 23px;
+}
+
+#accessories {
+    margin-left: 20px;
+}
+.handbags {
+    margin-left: 15px;
+}
+
+#handbags {
+    margin-left: 20px;
+}
+
+.jewelry {
+    margin-left: 90px;
+}
+
+#jewelry {
+    margin-left: 20px;
+}
+
+.shoes {
+    margin-left: 100px;
+}
+
+#shoes {
+    margin-left: 20px;
+}
+
+/* IMAGE SECTION */
+
+img {
+    width: 200px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.images {
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.imageSection1 {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.imageSection2 {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+.imageSelect {
+    margin-left: 125px;
+}
+
+.submitFor4 {
+    margin-top: 40px;
+}
+
+
+/* STEP 4 SECTION */
+
+.progress4 {
+    width: 80%;
+    height: 40px;
+    background-color: #d4d6d5;
+}
+
+.nameOnCard {
+    margin-left: 40px;
+}
+
+.fNameOnCard {
+    margin-left: 142px;
+}
+
+#nameOnCard {
+    margin-left: 21px;
+}
+
+.cardType {
+    margin-left: 70px;
+}
+
+#cardType {
+    margin-left: 23px;
+}
+
+#carddNo {
+    margin-left: 20px;
+}
+
+
+.expiryMonth {
+    margin-left: 48px;
+}
+
+#expiryMonth {
+    width: 50px;
+    margin-left: 20px;
+}
+
+#expiryYear {
+    width: 50px;
+}
+
+.ccv {
+    margin-left: 115px;
+}
+
+#ccv {
+    width: 40px;
+    margin-left: 22px;
+}
+
+#confirmSms {
+    font-size: 12px;
+    color: red;
+    font-weight: lighter;
+}
+
+#msgs {
+    color: red;
+    font-size: 12px;
+    font-weight: lighter;
+}
